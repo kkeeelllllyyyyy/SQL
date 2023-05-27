@@ -1,0 +1,37 @@
+--Create a record store database
+
+CREATE TABLE Record_Store (int integer primary key, record text, artist text, price numeric, inventory integer);
+
+INSERT into Record_Store VALUES
+
+(1, 'Taylor Swift', 'Taylor Swift', '12.50', 11),
+(2, 'Fearless', 'Taylor Swift', '13.00', 7),
+(3, 'Speak Now', 'Taylor Swift', '14.00', 5),
+(4, 'Red', 'Taylor Swift', '13.75', 12),
+(5, '1989', 'Taylor Swift', '13.50', 9),
+(6, 'Reputation', 'Taylor Swift', '14.25', 9), 
+(7, 'Lover', 'Taylor Swift', '14.75', 8),
+(8, 'Folklore', 'Taylor Swift', '15.25', 15),
+(9, 'Evermore', 'Taylor Swift', '15.00', 6),
+(10, 'Midnights', 'Taylor Swift', '15.50', 13),
+(11, 'The Record', 'BoyGenius', '14.75', 14),
+(12, 'PORTALS', 'Melanie Martinez', '15.00', 3),
+(13, 'SOS', 'SZA', '15.25', 6),
+(14, 'Cntrl', 'SZA', '13.50', 8),
+(15, 'Solar Power', 'Lorde', '14.00', 5);
+
+--display the database ordered by price 
+SELECT * 
+FROM Record_Store 
+ORDER BY price asc;
+
+--what is the average price of a Taylor Swift Record
+SELECT avg(price) 
+FROM Record_Store 
+WHERE artist = 'Taylor Swift';
+
+--what are the 5 records with the lowest inventory
+SELECT inventory
+FROM Record_Store
+ORDER by inventory asc
+LIMIT 5;
