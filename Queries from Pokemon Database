@@ -1,0 +1,120 @@
+CREATE TABLE pokemon(
+  Number     INTEGER,
+  Name       TEXT PRIMARY KEY,
+  Type_1     TEXT,
+  Type_2     TEXT,
+  Total      INTEGER,
+  HP         INTEGER,
+  Attack     INTEGER,
+  Defense    INTEGER,
+  Sp_Atk     INTEGER,
+  Sp_Def     INTEGER,
+  Speed      INTEGER,
+  Generation INTEGER,
+  Legendary  TEXT
+);
+
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (117,'Seadra','Water',NULL,440,55,65,95,95,45,85,1,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (118,'Goldeen','Water',NULL,320,45,67,60,35,50,63,1,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (119,'Seaking','Water',NULL,450,80,92,65,65,80,68,1,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (120,'Staryu','Water',NULL,340,30,45,55,70,55,85,1,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (121,'Starmie','Water','Psychic',520,60,75,85,100,85,115,1,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (122,'Mr. Mime','Psychic','Fairy',460,40,45,65,100,120,90,1,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (123,'Scyther','Bug','Flying',500,70,110,80,55,80,105,1,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (124,'Jynx','Ice','Psychic',455,65,50,35,115,95,95,1,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (125,'Electabuzz','Electric',NULL,490,65,83,57,95,85,105,1,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (126,'Magmar','Fire',NULL,495,65,95,57,100,85,93,1,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (127,'Pinsir','Bug',NULL,500,65,125,100,55,70,85,1,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (127,'PinsirMega Pinsir','Bug','Flying',600,65,155,120,65,90,105,1,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (128,'Tauros','Normal',NULL,490,75,100,95,40,70,110,1,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (129,'Magikarp','Water',NULL,200,20,10,55,15,20,80,1,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (130,'Gyarados','Water','Flying',540,95,125,79,60,100,81,1,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (130,'GyaradosMega Gyarados','Water','Dark',640,95,155,109,70,130,81,1,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (131,'Lapras','Water','Ice',535,130,85,80,85,95,60,1,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (132,'Ditto','Normal',NULL,288,48,48,48,48,48,48,1,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (133,'Eevee','Normal',NULL,325,55,55,50,45,65,55,1,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (134,'Vaporeon','Water',NULL,525,130,65,60,110,95,65,1,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (135,'Jolteon','Electric',NULL,525,65,65,60,110,95,130,1,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (136,'Flareon','Fire',NULL,525,65,130,60,95,110,65,1,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (137,'Porygon','Normal',NULL,395,65,60,70,85,75,40,1,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (171,'Lanturn','Water','Electric',460,125,58,58,76,76,67,2,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (172,'Pichu','Electric',NULL,205,20,40,15,35,35,60,2,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (173,'Cleffa','Fairy',NULL,218,50,25,28,45,55,15,2,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (174,'Igglybuff','Normal','Fairy',210,90,30,15,40,20,15,2,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (175,'Togepi','Fairy',NULL,245,35,20,65,40,65,20,2,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (176,'Togetic','Fairy','Flying',405,55,40,85,80,105,40,2,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (177,'Natu','Psychic','Flying',320,40,50,45,70,45,70,2,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (178,'Xatu','Psychic','Flying',470,65,75,70,95,70,95,2,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (179,'Mareep','Electric',NULL,280,55,40,40,65,45,35,2,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (180,'Flaaffy','Electric',NULL,365,70,55,55,80,60,45,2,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (181,'Ampharos','Electric',NULL,510,90,75,85,115,90,55,2,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (334,'Altaria','Dragon','Flying',490,75,70,90,70,105,80,3,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (334,'AltariaMega Altaria','Dragon','Fairy',590,75,110,110,110,105,80,3,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (335,'Zangoose','Normal',NULL,458,73,115,60,60,60,90,3,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (336,'Seviper','Poison',NULL,458,73,100,60,100,60,65,3,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (337,'Lunatone','Rock','Psychic',440,70,55,65,95,85,70,3,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (338,'Solrock','Rock','Psychic',440,70,95,85,55,65,70,3,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (339,'Barboach','Water','Ground',288,50,48,43,46,41,60,3,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (340,'Whiscash','Water','Ground',468,110,78,73,76,71,60,3,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (341,'Corphish','Water',NULL,308,43,80,65,50,35,35,3,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (342,'Crawdaunt','Water','Dark',468,63,120,85,90,55,55,3,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (343,'Baltoy','Ground','Psychic',300,40,40,55,40,70,55,3,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (344,'Claydol','Ground','Psychic',500,60,70,105,70,120,75,3,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (345,'Lileep','Rock','Grass',355,66,41,77,61,87,23,3,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (346,'Cradily','Rock','Grass',495,86,81,97,81,107,43,3,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (486,'Regigigas','Normal',NULL,670,110,160,110,80,110,100,4,'True');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (487,'GiratinaAltered Forme','Ghost','Dragon',680,150,100,120,100,120,90,4,'True');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (487,'GiratinaOrigin Forme','Ghost','Dragon',680,150,120,100,120,100,90,4,'True');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (488,'Cresselia','Psychic',NULL,600,120,70,120,75,130,85,4,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (489,'Phione','Water',NULL,480,80,80,80,80,80,80,4,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (490,'Manaphy','Water',NULL,600,100,100,100,100,100,100,4,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (491,'Darkrai','Dark',NULL,600,70,90,90,135,90,125,4,'True');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (492,'ShayminLand Forme','Grass',NULL,600,100,100,100,100,100,100,4,'True');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (492,'ShayminSky Forme','Grass','Flying',600,100,103,75,120,75,127,4,'True');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (493,'Arceus','Normal',NULL,720,120,120,120,120,120,120,4,'True');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (623,'Golurk','Ground','Ghost',483,89,124,80,55,80,55,5,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (624,'Pawniard','Dark','Steel',340,45,85,70,40,40,60,5,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (625,'Bisharp','Dark','Steel',490,65,125,100,60,70,70,5,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (626,'Bouffalant','Normal',NULL,490,95,110,95,40,95,55,5,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (627,'Rufflet','Normal','Flying',350,70,83,50,37,50,60,5,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (628,'Braviary','Normal','Flying',510,100,123,75,57,75,80,5,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (629,'Vullaby','Dark','Flying',370,70,55,75,45,65,60,5,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (630,'Mandibuzz','Dark','Flying',510,110,65,105,55,95,80,5,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (631,'Heatmor','Fire',NULL,484,85,97,66,105,66,65,5,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (632,'Durant','Bug','Steel',484,58,109,112,48,48,109,5,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (633,'Deino','Dark','Dragon',300,52,65,50,45,50,38,5,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (634,'Zweilous','Dark','Dragon',420,72,85,70,65,70,58,5,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (635,'Hydreigon','Dark','Dragon',600,92,105,90,125,90,98,5,'False');
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (636,'Larvesta','Bug','Fire',360,55,85,55,50,55,60,5,'False');
+
+select Name, Sp_Atk 
+from pokemon
+where Type_1 = 'Fire' 
+or Type_2 = 'Fire'
+order by Sp_Atk desc
+limit 3
+;
+
+select Type_1, avg(HP) 
+as avg_HP 
+from pokemon
+group by Type_1 
+having Attack > 50
+order by HP asc
+;
+
+select round(avg(Attack)) 
+as average_attack 
+from pokemon
+; 
+
+select count(*),
+    case
+        when Generation < 2
+        then 'original'
+        else 'new'
+        end as recency
+from pokemon
+group by recency  
+;
+
