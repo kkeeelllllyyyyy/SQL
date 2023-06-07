@@ -1,6 +1,10 @@
 --Create a record store database
 
-CREATE TABLE Record_Store (int integer primary key, record text, artist text, price numeric, inventory integer);
+CREATE TABLE Record_Store 
+(int integer primary key, 
+record text, artist text, 
+price numeric, 
+inventory integer);
 
 INSERT into Record_Store VALUES
 
