@@ -87,34 +87,36 @@ INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_
 INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (635,'Hydreigon','Dark','Dragon',600,92,105,90,125,90,98,5,'False');
 INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (636,'Larvesta','Bug','Fire',360,55,85,55,50,55,60,5,'False');
 
-select Name, Sp_Atk 
-from pokemon
-where Type_1 = 'Fire' 
-or Type_2 = 'Fire'
-order by Sp_Atk desc
-limit 3
+--Display the three fire type pokemon with the highest special attack
+SELECT Name, Sp_Atk 
+FROM pokemon
+WHERE Type_1 = 'Fire' 
+OR Type_2 = 'Fire'
+ORDER BY Sp_Atk desc
+LIMIT 3
 ;
 
-select Type_1, avg(HP) 
-as avg_HP 
-from pokemon
-group by Type_1 
-having Attack > 50
-order by HP asc
+--Display the average HP of each pokemon type, excluding those with attack below 50
+SELECT Type_1, avg(HP) AS avg_HP 
+FROM pokemon
+GROUP BY Type_1 
+HAVING Attack > 50
+ORDER BY HP asc
 ;
 
-select round(avg(Attack)) 
-as average_attack 
-from pokemon
+--Display the rounded average attack of all pokemon
+SELECT round(avg(Attack)) AS average_attack 
+FROM pokemon
 ; 
 
+--Display the number of pokemon that are original/from first gen as well as the number of pokemon that followed first gen
 select count(*),
-    case
-        when Generation < 2
-        then 'original'
-        else 'new'
-        end as recency
-from pokemon
-group by recency  
+    CASE
+        WHEN Generation < 2
+        THEN 'original'
+        ELSE 'new'
+        END AS recency
+FROM pokemon
+GROUP BY recency  
 ;
 
