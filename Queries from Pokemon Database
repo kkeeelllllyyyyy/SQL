@@ -87,7 +87,7 @@ INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_
 INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (635,'Hydreigon','Dark','Dragon',600,92,105,90,125,90,98,5,'False');
 INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation,Legendary) VALUES (636,'Larvesta','Bug','Fire',360,55,85,55,50,55,60,5,'False');
 
---Display the three fire type pokemon with the highest special attack
+--Display the three fire type pokemon with the highest special attack 
 SELECT Name, Sp_Atk 
 FROM pokemon
 WHERE Type_1 = 'Fire' 
