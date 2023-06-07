@@ -1,0 +1,74 @@
+CREATE TABLE singers 
+
+(id integer primary key, 
+name text, 
+age integer, 
+home_town text);
+
+INSERT into singers (name, age, home_town) VALUES ('Taylor Swift', 33, 'Reading');
+INSERT into singers (name, age, home_town) VALUES ('Phoebe Bridgers', 28, 'Pasadena');
+INSERT into singers (name, age, home_town) VALUES ('Lucy Dacus', 28, 'Mechanicsville');
+INSERT into singers (name, age, home_town) VALUES ('Julien Baker', 27, 'Memphis');
+
+CREATE TABLE songs
+
+(id integer primary key,
+title text,
+artist_id integer, 
+spotify_listens integer);
+
+INSERT into songs (title, artist_id, spotify_listens) VALUES ('Night Shift', 3, 5000000);
+INSERT into songs (title, artist_id, spotify_listens) VALUES ('You Need to Calm Down', 1, 7000000);
+INSERT into songs (title, artist_id, spotify_listens) VALUES ('Punisher', 2, 4000000);
+INSERT into songs (title, artist_id, spotify_listens) VALUES ('The Lakes', 1, 2000000);
+INSERT into songs (title, artist_id, spotify_listens) VALUES ('Appointments', 4, 10000000);
+INSERT into songs (title, artist_id, spotify_listens) VALUES ('Kyoto', 2, 2000000);
+INSERT into songs (title, artist_id, spotify_listens) VALUES ('Favor', 4, 3000000);
+INSERT into songs (title, artist_id, spotify_listens) VALUES ('Invisible String', 1, 11000000);
+
+CREATE TABLE song_features
+
+(id integer primary key, 
+song_id integer, 
+artist_id integer, 
+feature_artist text);
+
+INSERT into song_features (song_id, artist_id, feature_artist) VALUES (2, 1, 'Jay-Z');
+INSERT into song_features (song_id, artist_id, feature_artist) VALUES (3, 2, 'Ke$ha');
+INSERT into song_features (song_id, artist_id, feature_artist) VALUES (7, 4, 'BoB');
+INSERT into song_features (song_id, artist_id, feature_artist) VALUES (1, 3, 'Jay-Z');
+INSERT into song_features (song_id, artist_id, feature_artist) VALUES (6, 2, 'The Marias');
+
+--Display the top 3 most listened to artists on spotify with their total Spotify listens
+
+SELECT si.name AS artist, 
+sum(spotify_listens) 
+AS total_listens
+FROM singers AS si
+JOIN songs AS so
+ON si.id = so.artist_id
+GROUP BY si.name
+ORDER BY sum(spotify_listens) desc
+LIMIT 3;
+
+--Display the name of a song with its original artist, feature, and spotify listens
+
+SELECT so.title AS song_title, si.name, f.feature_artist, so.spotify_listens
+FROM singers AS si
+JOIN song_features AS f
+ON si.id = f.artist_id
+JOIN songs as so
+ON so.id = f.song_id
+GROUP BY so.title
+ORDER BY so.title asc;
+
+--Display all Taylor Swift songs including her name and features if applicable
+
+SELECT so.title, si.name, f.feature_artist
+FROM singers AS si
+JOIN songs AS so
+ON si.id = so.artist_id
+LEFT OUTER JOIN song_features AS f
+ON so.id = f.song_id
+GROUP BY so.title
+HAVING si.name = 'Taylor Swift' 
